@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background for better contrast */
+    color: #333; /* Dark text for readability */
+}
+
+.name {
+
+    color: red;
+}
+
+header {
+    background: linear-gradient(90deg, #ff6f61, #de5d83); /* Vibrant gradient */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Bright yellow on hover */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Center the content */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+    color: #ff6f61; /* Vibrant heading color */
+    border-bottom: 2px solid #de5d83; /* Underline for headings */
+    padding-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px; /* Indent for list items */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #ff6f61; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #ff6f61; /* Vibrant button color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #de5d83; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items on small screens */
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px; /* Reduce margin on small screens */
+    }
+}

@@ -1,0 +1,157 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="gym.css">
+</head>
+<body>
+    <header>
+        <name>
+        <h1>FIT LIFE</h1>
+        </name>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#chat box">chat box</a></li>
+                <li><a href="#complaint box">complaint box</a></li>
+                <li><a href="check in/check out">check in/ check out</a></li>
+                <li><a href="#shoping">shoping</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Your Fitness Journey Starts Here</h2>
+        <p>Join us to achieve your fitness goals with our state-of-the-art facilities and expert trainers.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best fitness experience. Our gym offers a variety of equipment, classes, and personal training options.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Personal Training</li>
+            <li>Group Classes</li>
+            <li>Nutritional Guidance</li>
+            <li>24/7 Access</li>
+        </ul>
+    </section>
+
+    <section id="membership">
+        <h2>Membership Registration</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="membership-type">Membership Type:</label>
+            <select id="membership-type" name="membership-type">
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="family">Family</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="time-tracking">
+        <h2>Check-In / Check-Out</h2>
+        <form action="#" method="post">
+            <label for="member-name">Full Name:</label>
+            <input type="text" id="member-name" name="member-name" required>
+            
+            <label for="check-in">Check-In Time:</label>
+            <input type="time" id="check-in" name="check-in" required>
+            
+            <label for="check-out">Check-Out Time:</label>
+            <input type="time" id="check-out" name="check-out">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="complaint">
+        <h2>Complaint Form</h2>
+        <form action="#" method="post">
+            <label for="complaint-name">Name:</label>
+            <input type="text" id="complaint-name" name="complaint-name" required>
+
+            <label for="complaint-email">Email:</label>
+            <input type="email" id="complaint-email" name="complaint-email" required>
+
+            <label for="complaint-details">Complaint Details:</label>
+            <textarea id="complaint-details" name="complaint-details" required></textarea>
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </section>
+
+    <section id="chatbox">
+        <h2>CHAT BOX</h2>
+        <div id="chat-window">
+            <div id="messages"></div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    
+
+    <section id="shopping">
+        <h2>Shop Our Products</h2>
+        <div class="product">
+            <h3>Protein Powder</h3>
+            <p>High-quality whey protein for muscle recovery.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Gym Gloves</h3>
+            <p>Comfortable and durable gloves for a better grip.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Resistance Bands</h3>
+            <p>Great for stretching and strength training.</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; 2023 Gym Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html><!DOCTYPE html>
